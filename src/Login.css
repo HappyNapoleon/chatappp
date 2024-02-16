@@ -1,0 +1,62 @@
+.chatlogo{
+    color:white;
+    margin-top:50px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+:root{
+    background-color:#141313;
+}
+
+.black-box{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background-color:#141313;
+    margin:auto;
+    padding-left:300px;
+    padding-right:300px
+}
+
+.yus{
+    background-color:black;
+    border-radius: 10px;
+    width:680px;
+    height:100vh;
+    box-shadow: 0 4px 8px 0 rgba(62, 61, 61, 0.12), 0 1px 20px 0 rgba(62, 61, 61, 0.12);
+}
+
+.sign-in{
+    Font-size: 35px;
+    color:white;
+    font-weight: 550;
+    margin-top:30px;
+    text-align:center;
+}
+
+.sign-in-button{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    margin-top:30px;
+}
+
+.sign-in-button-style{
+    width:300px;
+    color:#312f2f;
+    font-size:15px;
+    height:40px;
+    border-radius: 20px;
+    border:1px solid white;
+}
+
+.sign-in-text{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    color:white;
+}
+
