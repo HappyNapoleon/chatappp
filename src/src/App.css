@@ -1,0 +1,71 @@
+.InputCss{
+    bottom: 0;
+    position: absolute;
+    width: 528px;
+    height: 100px;
+    font-size: 22px;
+    background-color: #393a3c;
+    border:none;
+    color: white;
+    padding:12px
+}
+
+.submit-button{
+    bottom: 0;
+    position: absolute;
+    height: 100px;
+    width:152px;
+    border:none;
+    font-size: 30px;
+    background-color: #38388f;
+}
+
+
+.my-side{
+    background-color: #0b93f6;
+    width: fit-content;
+    margin-left: auto;
+    padding-left: 10px;    
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    margin-right: 10px;
+
+    margin-top:15px;
+    margin-bottom:15px;
+
+    .text-message{
+        color: white;
+        font-size: 17px;
+    }
+}
+
+
+.message-container {
+    display: flex;
+    align-items: flex-start; /* Adjust alignment as needed */
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left: 10px;
+}
+
+.other-side{
+    background-color: white;
+    width: fit-content;
+    margin-right: auto;
+    
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    margin-left: 10px;
+
+    .text-message{
+        color: black;
+        font-size: 17px;
+    }
+
+}
