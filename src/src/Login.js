@@ -30,7 +30,7 @@ export default function Login(){
                 <div className="sign-in-button">
                   <button onClick={signIn} className="btn btn-outline-success">Sign in with Google</button>
                 </div>
-                <p style={{color: 'white', marginTop: '20px', textAlign: 'center'}}>Do not violate the community guidelines or you will be banned for life!</p>
+                <p style={{color: 'white', marginTop: '20px', textAlign: 'center'}}>Do not violate the community guidelines</p>
             </div>
         </div>
     )

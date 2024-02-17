@@ -50,7 +50,7 @@ function Home() {
 
           <div className="row">
 
-            <div style={{overflowY: 'scroll', height: '90vh'}}>
+            <div className="message-scroll-css">
               {messages.map((message) => (
                 <div>
                   {user.uid === message.data.check ?
@@ -79,14 +79,10 @@ function Home() {
 
           </div>
 
-          <div className="row">
-            <div className="col-9">
-              <input placeholder='Say something nice' className="InputCss" value={text} onChange={textType}/>
-            </div>
-            <div className="col-3">
-              <button type="submit" className="submit-button" disabled={!text} onClick={buttonClick}>🕊️</button>
-            </div>
-          </div>  
+          <form onSubmit={buttonClick}>
+            <input placeholder='Say something nice' className="InputCss" value={text} onChange={textType}/>
+            <button type="submit" className="submit-button" disabled={!text} onClick={buttonClick}>🕊️</button>
+          </form>  
 
         </div>
     </div>
