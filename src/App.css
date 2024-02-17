@@ -1,8 +1,5 @@
 .InputCss{
-    bottom: 0;
-    position: absolute;
-    width: 528px;
-    height: 100px;
+    width:100%;
     font-size: 22px;
     background-color: #393a3c;
     border:none;
@@ -11,10 +8,7 @@
 }
 
 .submit-button{
-    bottom: 0;
-    position: absolute;
-    height: 100px;
-    width:152px;
+    width:40%;
     border:none;
     font-size: 30px;
     background-color: #38388f;
@@ -68,4 +62,21 @@
         font-size: 17px;
     }
 
+}
+
+form {
+    bottom: 0;
+    height: 10vh;
+    background-color: rgb(24, 23, 23);
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.message-scroll-css{
+    padding: 10px;
+    height: 90vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
 }
