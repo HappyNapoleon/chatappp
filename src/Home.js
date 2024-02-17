@@ -4,11 +4,15 @@ import firebase from "firebase/compat/app";
 import { useStateValue } from "./StateProvider";
 import Avatar from '@mui/material/Avatar';
 
+import {useNavigate} from 'react-router-dom';
+import { actionTypes } from './reducer'; 
+
 function Home() {
 
   const [text, setText] = useState('');
   const [messages, setMessages] = useState([])
   const [{ user }, dispatch] = useStateValue();
+  const navigate = useNavigate();
 
   const haram = useRef();
 
@@ -43,10 +47,24 @@ function Home() {
 
   }
 
+  const signOut = () => {
+    localStorage.removeItem('user');
+    dispatch({ type: actionTypes.SET_USER, user: null });
+    navigate('/');
+  };
+
 
   return (
     <div className="black-box">
         <div className="yus">
+
+          <div className="Header">
+            <header>
+              <h1>⚛️💬</h1>
+              <button className="sign-out-button" onClick={signOut}>Sign Out</button>
+            </header>
+          </div>
+
 
           <div className="row">
 
